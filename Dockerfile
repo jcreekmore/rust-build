@@ -7,7 +7,7 @@ ENV USER root
 # build depends
 RUN apt-get update && \
     apt-get --quiet --yes install \
-        build-essential pkg-config git \
+        build-essential curl pkg-config git \
         apt-transport-https && \
         apt-get autoremove -y && \
         apt-get clean && \
